@@ -1,4 +1,25 @@
 - commits:
+    - subject: 'u-boot-tegra_%.bbappend: Integrate jetson-tx2'
+      hash: bbb4891b72f5e4f14f3a56e7aa0e128be1280657
+      body: ''
+      footer:
+        Changelog-entry: 'u-boot-tegra_%.bbappend: Integrate jetson-tx2'
+        changelog-entry: 'u-boot-tegra_%.bbappend: Integrate jetson-tx2'
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+    - subject: Update meta-balena from v2.32.0 to v2.37.0
+      hash: fdca85c98b9cdaa6ec9a002ea2ea340e2bf70d60
+      body: ''
+      footer:
+        Changelog-entry: Update meta-balena from v2.32.0 to v2.37.0
+        changelog-entry: Update meta-balena from v2.32.0 to v2.37.0
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+  version: 2.37.0+rev1
+  date: 2019-06-04T15:36:55.807Z
+- commits:
     - subject: Fix primary partition number
       hash: b32ae35396a62b6eae8cdda49bb5d2332dad5094
       body: |
