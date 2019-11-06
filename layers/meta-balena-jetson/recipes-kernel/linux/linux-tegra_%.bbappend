@@ -2,6 +2,8 @@ inherit kernel-resin deploy
 
 FILESEXTRAPATHS_append := ":${THISDIR}/${PN}"
 
+SCMVERSION="n"
+
 # Prevent delayed booting
 # and support using partition label to load rootfs
 # in the case of jetson-xavier and tx2 flasher
@@ -29,6 +31,10 @@ SRC_URI_append_jetson-tx2 = " \
     file://0005-NFLX-2019-001-Resour-Consump-Low-MSS.patch \
     file://0006-NFLX-2019-001-Resour-Consump-Low-MSS.patch \
     file://0001-mttcan_ivc-Fix-build-failure-with-kernel-4.9.patch \
+"
+
+SRC_URI_append_jetson-nano = " \
+    file://tegra210-p3448-0002-p3449-0000-b00-jn30b-JP4.2.2.dtb \
 "
 
 TEGRA_INITRAMFS_INITRD = "0"
@@ -182,4 +188,8 @@ do_deploy_append_srd3-tx2() {
 
 do_deploy_append_blackboard-tx2() {
     cp ${WORKDIR}/tegra186-tx2-blackboard.dtb "${DEPLOYDIR}"
+}
+
+do_deploy_append_jn30b-nano() {
+    cp ${WORKDIR}/tegra210-p3448-0002-p3449-0000-b00-jn30b-JP4.2.2.dtb "${DEPLOYDIR}"
 }
