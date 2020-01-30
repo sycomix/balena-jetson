@@ -18,6 +18,7 @@ SRC_URI_append = " \
 
 SRC_URI_append_jetson-nano = " \
     file://nano-Integrate-with-Balena-and-load-kernel-from-root.patch \
+    file://pxe-First-try-for-fdtfile-env-variable.patch \
 "
 
 # In l4t 28.2 below partitions were 0xC and 0xD
